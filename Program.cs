@@ -82,15 +82,15 @@
 
 //Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
-Console.WriteLine("введите количество строк");
+Console.WriteLine("Введите количество строк");
 int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите количество столбцов");
+Console.WriteLine("Введите количество столбцов");
 int m = Convert.ToInt32(Console.ReadLine());
 
 int[,] numbers = new int[n, m];
 FillArrayRandomNumbers(numbers);
 
-
+Console.WriteLine("Среднее арифметическое каждого столбца:");
 for (int j = 0; j < numbers.GetLength(1); j++)
 {
     double avarage = 0;
